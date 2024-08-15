@@ -1,0 +1,518 @@
+:root {
+  --text-color: #eeeeee;
+  --link-color: #4a76ee;
+  --background-color: #686d76;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 0;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: #dc5f00;
+}
+
+/* Container class right to be inline-block */
+.right {
+  display: inline-block;
+  vertical-align: top; /* This aligns the .right div with its surrounding inline-block or inline elements */
+}
+
+/* Make the ul element inside .right inline-block */
+.right ul {
+  display: inline-block;
+  margin: 0; /* Optional: Reset default margin/padding */
+  padding: 0;
+}
+
+/* Make the ul's li elements inline-block */
+.right ul li {
+  display: inline-block;
+  margin-right: 20px; /* Optional: Adjust spacing between menu items */
+}
+
+/* Make the Hire Me button inline-block */
+.right .btn {
+  display: inline-block;
+  vertical-align: top; /* This aligns the .btn with other inline-block elements within .right */
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #dc5f00;
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #dc5f00;
+  color: #eeeeee;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+/* SECTION 1: HERO */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px 0;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+span.level {
+  color: rgba(250, 128, 114, 0.7);
+}
+
+p {
+  color: #eeeeee;
+  margin: 20px 0px 20px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-section .text .link {
+  margin-top: 25px;
+}
+
+/* DOWNLOAD BUTTON */
+
+form {
+  margin: auto;
+}
+
+#download {
+  display: block;
+  padding: 15px;
+  margin: 0;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  text-align: left;
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px #aaa;
+  margin: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #373a40;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  background-color: #b43f3f;
+  width: 30px;
+  margin-right: 155px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: skew(-30deg);
+}
+
+button::before {
+  content: "Download CV";
+  line-height: 50px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  width: 170px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #f8eded);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-section .profile-photo {
+  flex: 2;
+}
+
+.hero-section .profile-photo img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  /* NAVBAR */
+  nav {
+    padding: 10px 20px 0;
+  }
+
+  .right ul li {
+    display: none;
+  }
+
+  .left h2 {
+    font-size: 22px;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .profile-photo img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* SKILLS-SECTION */
+.skill-section {
+  background-color: #eeeeee;
+}
+
+.h3 {
+  color: #373a40;
+}
+
+.skill-title {
+  text-align: center;
+  padding-top: 30px;
+  color: #373a40;
+}
+
+.skill-section {
+  margin-top: 10%;
+  padding-bottom: 20px;
+}
+
+.skill-section .h3 {
+  margin-bottom: 5px;
+  margin-left: 25%;
+}
+
+.box {
+  width: 50%;
+  background-color: #d1e0e0;
+  margin-left: 25%;
+  border-radius: 5px;
+}
+
+.skils {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.html {
+  width: 90%;
+  background-color: #eaca31;
+  margin-bottom: 30px;
+}
+
+.css {
+  width: 75%;
+  background-color: #61dafb;
+  margin-bottom: 30px;
+}
+
+.js {
+  width: 65%;
+  background-color: #3498db;
+  margin-bottom: 30px;
+}
+
+.php {
+  width: 45%;
+  background-color: #373a40;
+  margin-bottom: 30px;
+}
+
+/* REVIEW-SECTION */
+.review-section {
+  padding: 40px 0;
+  color: #eeeeee;
+  text-align: center;
+}
+
+.review-text {
+  color: #373a40;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: #dc5f00;
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #eeeeee;
+  padding: 30px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars {
+  color: #dc5f00;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* CONTACT-ME-SCTION */
+.contact-me {
+  background-color: #eeeeee;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.contact-me h1 {
+  text-align: center;
+  color: #373a40;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #373a40;
+  padding: 20px 40px;
+  outline: none;
+  color: #eeeeee;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #373a40;
+  color: #eeeeee;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #dc5f00;
+}
+
+/* FOOTER-SECTION */
+.footer-section {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icons a i {
+  font-size: 2em;
+  color: #373a40;
+  opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.social-icons a:hover {
+  background-color: #373a40;
+  transition: 0.5s;
+}
+.social-icons a:hover i {
+  color: #eeeeee;
+  transition: 0.5s;
+}
+.footer-nav {
+  margin: 30px 0;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer-nav ul li a {
+  color: #eeeeee;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+.footer-bottom {
+  background-color: #373a40;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #eeeeee;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+  .footer-nav ul {
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .social-icons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}

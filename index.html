@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <h2 class="logo">Cod<span>Zill</span>A</h2>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">My Skills</a></li>
+          <li><a href="#">My Portfolio</a></li>
+        </ul>
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1: HERO -->
+      <section class="hero-section">
+        <div class="text">
+          <p>Hey, <br /></p>
+          <p>Welcome to my Portfolio! <br /></p>
+          <p>
+            My name is CodZilla, and I'm a
+            <span class="level">Full-Stack</span> Web Developer
+          </p>
+          <div class="link">
+            <form>
+              <button id="download" class="gradient-background">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="profile-photo">
+          <img src="./images/Head-Photo Cropped (2) (1).webp" alt="" />
+        </div>
+      </section>
+
+      <!-- SECTION 2: SKILLS -->
+      <section id="skills">
+        <div class="skill-section">
+          <h1 class="skill-title">My Skills</h1>
+          <div class="border"></div>
+
+          <h3 class="h3">Javascript</h3>
+          <div class="box">
+            <div class="skils html"></div>
+          </div>
+
+          <h3 class="h3">React.Js</h3>
+          <div class="box">
+            <div class="skils css"></div>
+          </div>
+
+          <h3 class="h3">Css</h3>
+          <div class="box">
+            <div class="skils js"></div>
+          </div>
+
+          <h3 class="h3">Html</h3>
+          <div class="box">
+            <div class="skils php"></div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3: REVIEWS -->
+      <section id="Testimonials">
+        <div class="review-section">
+          <div class="inner">
+            <h1>Reviews</h1>
+            <div class="border"></div>
+
+            <div class="row">
+              <div class="col">
+                <div class="testimonial">
+                  <img
+                    src="./images/pexels-pixabay-45201 Cropped (1).webp"
+                    alt=""
+                  />
+                  <div class="name review-text">Mr. Meow</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    "Codzilla did an amazing job on my website. His attention to
+                    detail and creativity were impressive. I couldn't be happier
+                    with the outcome!" – Mr. Meow from Texas
+                  </p>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="testimonial">
+                  <img
+                    src="./images/pexels-kowalievska-1170986 Cropped.webp"
+                    alt=""
+                  />
+                  <div class="name review-text">Mrs. Meow</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    "He took my idea and turned it into a fantastic web app. His
+                    professionalism and expertise made the process so easy.
+                    Highly recommend his work!" – Mrs. Meow from Arizona
+                  </p>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="testimonial">
+                  <img
+                    src="./images/pexels-kmerriman-20787 Cropped.webp"
+                    alt=""
+                  />
+                  <div class="name review-text">Miss. Meow</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    "Working with Codzilla was a great experience. He built a
+                    sleek and functional portfolio website for me, and I’m
+                    thrilled with it!" – Miss Meow from Pennsylvania
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONTACT ME -->
+      <section id="">
+        <div class="contact-me">
+          <h1 class="contact-me-text">Contact Me</h1>
+          <div class="border"></div>
+          <form class="contact-form" action="index.html" method="post">
+            <input
+              type="text"
+              class="contact-form-text"
+              placeholder="Your name"
+            />
+            <input
+              type="email"
+              class="contact-form-text"
+              placeholder="Your email"
+            />
+            <input
+              type="text"
+              class="contact-form-text"
+              placeholder="Your phone"
+            />
+            <textarea
+              class="contact-form-text"
+              placeholder="Your message"
+            ></textarea>
+            <div class="parent-container">
+              <input type="submit" class="contact-form-btn" value="Send" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- FOOTER-SECTION -->
+      <footer>
+        <div class="footer-section">
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Me</a></li>
+              <li><a href="">My Skills</a></li>
+              <li><a href="">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              Copyright &copy;2024 Designed by
+              <span class="designer">Codzilla</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
